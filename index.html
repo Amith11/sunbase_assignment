@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Form</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="menu-icon" onclick="openNav()">
+      <i class="fas fa-bars open-icon"></i>
+    </div>
+
+    <div class="sidenav" id="mySidenav">
+      <a href="#" class="close-btn" onclick="closeNav()"
+        ><i class="fas fa-times close-icon"></i
+      ></a>
+      <a href="#" class="add-input">Input <i class="fa fa-plus icon"></i></a>
+      <a href="#" class="add-select">Select <i class="fa fa-plus icon"></i></a>
+      <a href="#" class="add-textarea"
+        >Textarea <i class="fa fa-plus icon"></i
+      ></a>
+    </div>
+
+    <div class="heading">
+      <h1>Visual Form</h1>
+    </div>
+
+    <div class="form-container">
+      <form id="myForm" class="form-background" style="width: 35%">
+        <div id="inputs">
+          <div class="input-group">
+            <div>
+              <h4 style="cursor: pointer">Sample Label</h4>
+              <i class="fa fa-trash delete-icon"></i>
+            </div>
+            <input type="text" placeholder="Enter Label" />
+          </div>
+          <div class="input-group">
+            <h4 style="cursor: pointer">Select</h4>
+            <i class="fa fa-trash delete-icon"></i>
+            <select class="select-options">
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+            </select>
+            <button class="add-option-btn" style="margin-top: 15px;">Add</button>
+            <button class="delete-selected-btn">Delete</button>
+          </div>
+          <div class="input-group">
+            <h4 style="cursor: pointer">Textarea</h4>
+            <i class="fa fa-trash delete-icon"></i>
+            <textarea placeholder="Enter text"></textarea>
+          </div>
+        </div>
+        <button type="button" id="saveBtn">Save</button>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
